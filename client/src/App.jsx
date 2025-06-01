@@ -28,7 +28,7 @@ const AppContent = () => {
 								>
 									<Menu className="w-6 h-6" />
 								</button>
-								<Link to="/" className="text-2xl font-bold text-amber-400 hover:text-amber-500">
+								<Link to="/" className="hidden md:block text-2xl font-bold text-amber-400 hover:text-amber-500">
 									SIGNATURÉ
 								</Link>
 							</div>
@@ -71,7 +71,7 @@ const AppContent = () => {
 							</nav>
 
 							<Link to="/profile" className="flex-1 flex justify-end items-center space-x-3">
-								<div className="text-2xl font-bold text-amber-400 hover:text-amber-500">
+								<div className="text-2xl font-bold whitespace-nowrap text-amber-400 hover:text-amber-500">
 									Welcome, {user?.firstName || user?.username}
 								</div>
 								<div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center text-g font-semibold">
