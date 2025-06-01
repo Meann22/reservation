@@ -1,0 +1,103 @@
+/* Home.responsive.css */
+
+/* Tablet: width between 768px and 1023px */
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* Adjust h1 font size */
+  h1.font-athena {
+    font-size: 4rem; /* smaller than desktop */
+  }
+
+  /* Adjust paragraph font sizes */
+  p.text-2xl {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons smaller */
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust image container width */
+  .relative.w-8\/12 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* SuiteCard container */
+  .flex.flex-col.gap-20.w-10\/12 {
+    width: 95%;
+    gap: 1rem;
+  }
+
+  /* Testimonial container */
+  .flex.flex-col.gap-24.w-8\/12 {
+    width: 95%;
+    gap: 1rem;
+  }
+
+  /* Footer width adjustment */
+  .flex.font-young.text-a.w-8\/12.justify-between {
+    width: 95%;
+  }
+}
+
+/* Mobile: width less than 768px */
+@media (max-width: 767px) {
+  /* Smaller header font */
+
+
+  /* Smaller subheading */
+
+
+  /* Adjust button size */
+  /* button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  } */
+
+  /* Adjust the main hero text width */
+  p.text-8xl.w-2\/4 {
+    width: 100%;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+  /* Reduce padding and margin in main sections */
+  .min-h-screen.py-26 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Image containers to be full width */
+  .relative.w-8\/12 {
+    width: 100%;
+  }
+
+  /* SuiteCard container to full width with smaller gaps */
+  .flex.flex-col.gap-20.w-10\/12 {
+    width: 100%;
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  /* Testimonial container */
+  .flex.flex-col.gap-24.w-8\/12 {
+    width: 100%;
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  /* Footer links stack vertically */
+  .flex.font-young.text-a.w-8\/12.justify-between {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  /* Footer social icons size */
+  .flex.gap-12.mb-24 img {
+    width: 4rem; /* bigger icons for tap */
+  }
+}

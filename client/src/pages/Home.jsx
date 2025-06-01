@@ -12,6 +12,7 @@ import FBIcon from "../assets/fb_icon.svg";
 import IGIcon from "../assets/ig_icon.svg";
 import XIcon from "../assets/x_icon.svg";
 import { useNavigate } from "react-router-dom";
+import "../styles/Home.css"; 
 
 const Home = () => {
 	const { suites, fetchSuites } = useStore();
@@ -48,43 +49,55 @@ const Home = () => {
 						</button>
 					</div>
 
-					<div className="flex w-full h-screen items-center justify-center">
-						<div className="relative w-8/12">
-							<img className="absolute w-full h-full object-cover z-0" src={HallImage} />
-							{/* <div className="w-1/3"></div> */}
-							<div className="w- flex flex-col items-end z-10 relative">
-								<p className="text-justify text-g pb-8 pl-8 font-young-med text-8xl w-2/4 bg-b rounded-bl-2xl">
-									ELEGANCE, SERENE, & GRANDEUR
-								</p>
-								<div className="flex justify-end items-end w-full">
-									<div className="flex flex-col w-4/12 bg-b pl-8">
-										<p className="text-xl mb-8 font-young text-f text-justify">
-											Experience luxury with Signature. Stay within the four walls of status and
-											statement, the same magnificence that put Signature into the Forbes Travel
-											Guide 2025.
-										</p>
-										<button
-											onClick={() => navigate("/suites")}
-											className="font-young text-amber-900 py-4 cursor-pointer hover:bg-amber-900 hover:text-amber-100 border-2 boder-amber-900 rounded-xl"
-										>
-											BOOK NOW
-										</button>
-									</div>
-								</div>
+					<div className="flex w-full min-h-screen items-center justify-center px-4 py-8">
+					<div className="relative w-full md:w-10/12 lg:w-8/12">
+						<img
+						className="absolute w-full h-full object-cover z-0"
+						src={HallImage}
+						alt="Hall"
+						/>
+						<div className="relative z-10 flex flex-col md:items-end gap-6">
+						<p className="text-g font-young-med bg-b rounded-bl-2xl px-4 py-2 text-2xl sm:text-4xl md:text-6xl lg:text-8xl w-full md:w-2/4 text-justify">
+							ELEGANCE, SERENE, & GRANDEUR
+						</p>
+						<div className="flex justify-end items-end w-full">
+							<div className="flex flex-col bg-b px-4 py-6 w-full sm:w-8/12 md:w-6/12 lg:w-4/12">
+							<p className="text-f text-justify font-young text-base sm:text-lg md:text-xl mb-4">
+								Experience luxury with Signature. Stay within the four walls of status and
+								statement, the same magnificence that put Signature into the Forbes Travel
+								Guide 2025.
+							</p>
+							<button
+								onClick={() => navigate("/suites")}
+								className="font-young text-amber-900 py-3 sm:py-4 cursor-pointer hover:bg-amber-900 hover:text-amber-100 border-2 border-amber-900 rounded-xl text-sm sm:text-base"
+							>
+								BOOK NOW
+							</button>
 							</div>
 						</div>
-					</div>
-
-					<div className="relative">
-						<img className="z-0" src={Divider0Image} />
-						<div className="absolute inset-0 bg-g/60 justify-center items-center flex flex-col">
-							<p className="font-young-med text-6xl text-a mb-4">LUXURY SUITES</p>
-							<p className="font-young text-b text-xl">
-								Indulge in the epitome of luxury with our meticulously designed suites, each
-								offering a <br /> unique experience of sophistication and comfort.
-							</p>
 						</div>
 					</div>
+					</div>
+
+
+					<div className="relative w-full">
+					<img
+						className="z-0 w-full object-cover min-h-[120px] sm:min-h-[400px] md:min-h-[100px]"
+						src={Divider0Image}
+						alt="Luxury Suites"
+					/>
+					<div className="absolute inset-0 bg-g/60 flex flex-col justify-center items-center text-center px-4 py-6">
+						<p className="font-young-med text-2xl sm:text-4xl md:text-6xl text-a mb-4 leading-tight">
+						LUXURY SUITES
+						</p>
+						<p className="font-young text-b text-sm sm:text-base md:text-xl max-w-xl leading-snug">
+						Indulge in the epitome of luxury with our meticulously designed suites,
+						each offering a unique experience of sophistication and comfort.
+						</p>
+					</div>
+					</div>
+
+
 
 					<div className="min-h-screen flex justify-center py-26">
 						<div className="flex flex-col gap-20 w-10/12">
@@ -95,10 +108,10 @@ const Home = () => {
 					</div>
 
 					<div className="relative">
-						<img className="z-0" src={Divider1Image} />
-						<div className="absolute inset-0 bg-g/60 justify-center items-center flex flex-col">
-							<p className="font-young-med text-6xl text-a mb-4">WHAT OUR GUESTS SAY</p>
-							<p className="font-young text-b text-xl">
+						<img className="z-0 w-full object-cover min-h-[120px] sm:min-h-[400px] md:min-h-[100px]" src={Divider1Image} />
+						<div className="absolute inset-0 bg-g/60 flex flex-col justify-center items-center text-center px-4 py-6">
+							<p className="font-young-med text-2xl sm:text-4xl md:text-6xl text-a mb-4 leading-tight">WHAT OUR GUESTS SAY</p>
+							<p className="font-young text-b text-sm sm:text-base md:text-xl max-w-xl leading-snug">
 								Discover why discerning travelers choose us for extraordinary moments,
 								<br />
 								as each stay is crafted to surpass expectations and create lasting memories.
